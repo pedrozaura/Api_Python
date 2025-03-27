@@ -1,0 +1,28 @@
+D:\FAG\7 Periodo\venv>Scripts\activate
+
+venv\Scripts\activate
+
+para finalizar "  deactivate  "
+
+python API_Full.py
+
+
+Para rodar a atualização do banco de dados criando a nova estrutura montada no codigo.
+
+para criar as tabelas novas:
+
+flask --app API_Full.py db init
+
+Para atualizar o banco com a criação
+
+flask --app API_Full.py db upgrade
+
+
+
+
+tabela parametro
+    lote 
+    temperatura
+    umidade
+    pressao 
+    luminosidade
