@@ -1,6 +1,15 @@
+**** Formato para subir o Sistema no formato antigo.
+
 D:\FAG\7 Periodo\venv>Scripts\activate
 
+D:\RepositorioGithub\Api_Python\venv\Scripts\activate
+
 venv\Scripts\activate
+
+
+**** Novo Comando para subir o Serviço devido a alteração para o RepositorioGithub
+
+D:\RepositorioGithub\Api_Python\venv\Scripts\activate
 
 para finalizar "  deactivate  "
 
