@@ -189,7 +189,7 @@ Adiciona um novo registro de parâmetros ambientais.
 
 ---
 
-### 📥 GET `/api/parametros`
+### GET `/api/parametros`
 
 #### Descrição
 
@@ -225,7 +225,7 @@ Retorna todos os registros de parâmetros ambientais.
 
 ---
 
-### ♻️ PUT `/api/parametros/<parametro_id>`
+### PUT `/api/parametros/<parametro_id>`
 
 #### Descrição
 
@@ -257,6 +257,35 @@ Atualiza campos de um parâmetro ambiental específico.
     "id": 5,
     "lote": 101
   }
+}
+```
+
+#### Códigos de status
+
+- `200 OK`: Sucesso
+- `404 Not Found`: Parâmetro não encontrado
+
+---
+
+### DELETE `/api/parametros/<parametro_id>`
+
+#### Descrição
+
+Remove um parâmetro ambiental específico com base no seu ID.
+
+#### Método HTTP
+
+`DELETE`
+
+#### Parâmetros de URL
+
+- `parametro_id` (int): ID do parâmetro
+
+#### Resposta (200 OK)
+
+```json
+{
+  "message": "Parâmetro deletado com sucesso"
 }
 ```
 
