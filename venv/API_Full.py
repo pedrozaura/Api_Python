@@ -55,6 +55,7 @@ def get_data():
     return jsonify({"message": "Dados recuperados com sucesso", "data": items_list}), 200
 
 # Rota para enviar dados (POST)
+# Feito kkkk
 @app.route('/api/data/itens', methods=['POST'])
 def post_data():
     data = request.json
@@ -81,6 +82,7 @@ def update_data(item_id):
     return jsonify({"message": "Item atualizado com sucesso", "item": {"id": item.id, "name": item.name}}), 200
 
 # Rota para deletar dados (DELETE)
+#Feito kkkk
 @app.route('/api/data/delete/<int:item_id>', methods=['DELETE'])
 def delete_data(item_id):
     item = Item.query.get(item_id)
