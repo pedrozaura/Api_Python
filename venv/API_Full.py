@@ -67,6 +67,7 @@ def post_data():
     return jsonify({"message": "Item criado com sucesso", "item": {"id": new_item.id, "name": new_item.name}}), 201
 
 # Rota para atualizar dados (PUT)
+#feito kkkk
 @app.route('/api/data/<int:item_id>', methods=['PUT'])
 def update_data(item_id):
     data = request.json
@@ -90,7 +91,7 @@ def delete_data(item_id):
     db.session.commit()
     return jsonify({"message": "Item deletado com sucesso"}), 200
 
-
+# feito kkkk
 @app.route('/api/parametros', methods=['POST'])
 def add_parametro():
     data = request.json
@@ -146,7 +147,7 @@ def add_parametro():
         }
     }), 201
 
-
+# FEito kkkk
 @app.route('/api/parametros', methods=['GET'])
 def get_parametros():
     parametros = Parametro.query.all()
@@ -161,6 +162,7 @@ def get_parametros():
     } for p in parametros]
     return jsonify({"message": "Parâmetros recuperados com sucesso", "data": parametros_list}), 200
 
+#Feito kkkk
 @app.route('/api/parametros/<int:parametro_id>', methods=['PUT'])
 def update_parametro(parametro_id):
     data = request.json
