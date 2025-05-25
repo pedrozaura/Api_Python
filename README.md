@@ -25,3 +25,16 @@ flask --app API_Full.py db upgrade
 Espero que tenha uma experiencia fantastica ao usar esse serviço. 
 
 Link de acesso a Documentação da API: https://documenter.getpostman.com/view/9137178/2sAYdfpqzL
+
+
+Para Instalar o Cypress
+
+npm install cypress --save-dev
+
+npm install cypress-plugin-api --save-dev
+
+import 'cypress-plugin-api';
+
+Para Rodar o Cypress
+npx cypress open
+npx cypress run --e2e
