@@ -24,6 +24,10 @@ Espero que tenha uma experiencia fantastica ao usar esse serviço.
 
 Link de acesso a Documentação da API: https://documenter.getpostman.com/view/9137178/2sAYdfpqzL
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e6ac7b9c02411394e53f5baf885d2d66185db513
 Para Instalar o Cypress
 
 npm install cypress --save-dev
